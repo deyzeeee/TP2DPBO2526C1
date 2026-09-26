@@ -33,10 +33,13 @@ TP2DPBO2526C1/
 │   ├── Main.php
 │   ├── testcase.txt
 │   └── images/
-│       └── *.jpg (poster hasil upload, otomatis dibuat)
+│       └── *.jpg/.png
 │
 ├── Dokumentasi/
-│   └── (screenshot/screen record tiap bahasa)
+│   └── cpp
+|   └── python
+|   └── java
+|   └── php
 │
 └── Readme.md
 ```
@@ -49,16 +52,8 @@ Terdapat 3 class:
 2. *FilmAnimasi*, turunan class Film, menambahkan atribut yang mulai spesifik dimiliki produksi film animasi.
 3. *Film2D*, turunan class FilmAnimasi, menambahkan atribut yang mulai khusus dimiliki animasi bergaya 2D.
 
-Dalam repo ini terdapat 4 bahasa: *C++, Java, Python, dan PHP*.
-
-Ketentuan:
-- Memiliki 5 data awal (default) sebelum ada input user.
-- Menerima input user (Add saja, sesuai ketentuan TP2 — tidak ada update/hapus/cari).
-- Menampilkan data class terakhir/level paling bawah (**Film2D**) dalam satu tabel dinamis — karena Film2D sudah otomatis mewarisi seluruh atribut Film dan FilmAnimasi, 1 baris tabel = data lengkap dari ketiga class sekaligus.
-- Pada PHP ditambahkan atribut `poster` (gambar), khusus di versi PHP saja.
-
 # ❌ Error Handling
-Dalam semua program terdapat error handling untuk input yang tidak valid: input non-numeric pada field angka (ID, durasi, harga, frame rate, jumlah layer), angka negatif/nol pada field yang mensyaratkan nilai positif, serta ID yang sudah dipakai film lain. Program akan terus meminta input sampai valid (CLI) atau menampilkan pesan error dan tidak menyimpan data (PHP). Semua validasi pada CLI (C++/Java/Python) memakai pola `while` + flag boolean, bukan `for`/`while(true)` dengan `break`/`continue`.
+Dalam semua program terdapat error handling untuk input yang tidak valid: input non-numeric pada field angka (ID, durasi, harga, frame rate, jumlah layer), angka negatif/nol pada field yang mensyaratkan nilai positif, serta ID yang sudah dipakai film lain. Program akan terus meminta input sampai valid (CLI) atau menampilkan pesan error dan tidak menyimpan data (PHP).
 
 # Diagram Konsep
 
