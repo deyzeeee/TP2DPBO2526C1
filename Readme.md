@@ -62,7 +62,7 @@ Dalam semua program terdapat error handling untuk input yang tidak valid: input 
 
 # Diagram Konsep
 
-<img src="Dokumentasi/desain_diagram_TP2.drawio" alt="desain diagram"><br>
+<img src="Dokumentasi/desain_diagram_TP2.png" alt="desain diagram"><br>
 
 ### Alasan pemilihan class
 1. *Film*: class paling umum, dimiliki semua jenis film (live action maupun animasi). Atribut di sini sengaja dibuat sesedikit mungkin (id, judul, genre, durasi, harga) supaya benar-benar generik.
@@ -101,46 +101,46 @@ Dalam semua program terdapat error handling untuk input yang tidak valid: input 
 
 ## Output program C++
 ### Tampilan 5 data awal & tabel dinamis
-<img src="Dokumentasi/cpp/tampil-data-cpp.png" alt="tampil data cpp">
+<img src="Dokumentasi/cpp/Tampilan 5 data awal & tabel dinamis.png" alt="tampil data cpp">
 <br>
 
 ### Tambah data beserta error handling input
-<img src="Dokumentasi/cpp/tambah-data-dan-error-handling-cpp.png" alt="tambah data dan error handling cpp">
+<img src="Dokumentasi/cpp/Tambah data beserta error handling input.png" alt="tambah data dan error handling cpp">
 <br>
 
 ## Output program Java
 ### Tampilan 5 data awal & tabel dinamis
-<img src="Dokumentasi/java/tampil-data-java.png" alt="tampil data java">
+<img src="Dokumentasi/java/Tampilan 5 data awal & tabel dinamis.png" alt="tampil data java">
 <br>
 
 ### Tambah data beserta error handling input 
-<img src="Dokumentasi/java/tambah-data-dan-error-handling-java-1.png" alt="tambah data dan error handling java">
+<img src="Dokumentasi/java/Tambah data beserta error handling input 1.png" alt="tambah data dan error handling java">
 <br>
-<img src="Dokumentasi/java/tambah-data-dan-error-handling-java-2.png" alt="tambah data dan error handling java">
+<img src="Dokumentasi/java/Tambah data beserta error handling input 2.png" alt="tambah data dan error handling java">
 <br>
 
 ## Output program Python
 ### Tampilan 5 data awal & tabel dinamis
-<img src="Dokumentasi/python/tampil-data-py.png" alt="tampil data py">
+<img src="Dokumentasi/python/Tampilan 5 data awal & tabel dinamis.png" alt="tampil data py">
 <br>
 
 ### Tambah data beserta error handling input
-<img src="Dokumentasi/python/tambah-data-dan-error-handling-py.png" alt="tambah data dan error handling py">
+<img src="Dokumentasi/python/Tambah data beserta error handling input.png" alt="tambah data dan error handling py">
 <br>
 
 ## Output program PHP
 ### Tampilan awal (5 data awal dalam tabel dinamis)
-<img src="Dokumentasi/php/tampilan-awal-php.png" alt="tampilan awal php">
+<img src="Dokumentasi/php/Tampilan awal (5 data awal dalam tabel dinamis).png" alt="tampilan awal php">
 <br>
 
 ### Tambah Film (beserta upload poster)
-<img src="Dokumentasi/php/tambah-film-php.png" alt="tambah film php">
+<img src="Dokumentasi/php/Tambah Film (beserta upload poster).png" alt="tambah film php">
 <br>
 
 ### Error handling (ID double / input tidak valid / poster kosong)
-<img src="Dokumentasi/php/error-handling-php.png" alt="error handling php">
+<img src="Dokumentasi/php/Error handling (ID double or input tidak valid or poster kosong).png" alt="error handling php">
 <br>
 
 ### Reset Data
-<img src="Dokumentasi/php/reset-data-php.png" alt="reset data php">
+<img src="Dokumentasi/php/Reset Data.png" alt="reset data php">
 <br>
