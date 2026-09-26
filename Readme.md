@@ -3,7 +3,7 @@ Saya Muhammad Fadey Rafif dengan NIM 2504792 mengerjakan Tugas Praktikum 2 dalam
 
 # STRUKTUR FILE
 
-``
+```
 TP2DPBO2526C1/
 ├── cpp/
 │   ├── Film.cpp
@@ -62,40 +62,12 @@ Dalam semua program terdapat error handling untuk input yang tidak valid: input 
 
 # Diagram Konsep
 
-```mermaid
-classDiagram
-    class Film {
-        -int id_film
-        -string judul
-        -string genre
-        -int durasi
-        -int harga
-        +Getter()
-        +Setter()
-    }
-    class FilmAnimasi {
-        -string studio_animasi
-        -string rating_usia
-        -int frame_rate
-        +Getter()
-        +Setter()
-    }
-    class Film2D {
-        -string gaya_visual
-        -int jumlah_layer
-        -string resolusi
-        +Getter()
-        +Setter()
-    }
-    Film <|-- FilmAnimasi
-    FilmAnimasi <|-- Film2D
-```
-> Khusus versi PHP, class `Film` punya 1 atribut tambahan `-string poster` (path gambar lokal di folder `images/`, wajib diunggah saat tambah data) yang otomatis ikut diwarisi ke `FilmAnimasi` dan `Film2D`. Tidak digambar di diagram di atas karena cuma ada di versi web.
+<img src="Dokumentasi/desain_diagram_TP2.drawio" alt="desain diagram"><br>
 
 ### Alasan pemilihan class
 1. *Film*: class paling umum, dimiliki semua jenis film (live action maupun animasi). Atribut di sini sengaja dibuat sesedikit mungkin (id, judul, genre, durasi, harga) supaya benar-benar generik.
-2. *FilmAnimasi*: kategori yang lebih khusus dari Film — ibarat "jenis" dari Film yang menambahkan konteks produksi animasi (studio, rating usia, frame rate) tanpa terikat gaya visual tertentu.
-3. *Film2D*: turunan dari FilmAnimasi, mewakili animasi bergaya 2D secara spesifik (gaya visual, jumlah layer, resolusi). Program ini hanya membuat objek sampai level *Film2D* (class paling bawah) supaya satu objek langsung merepresentasikan data lengkap dari ketiga class sekaligus; ke depannya class lain seperti `Film3D` atau `FilmStopMotion` bisa ditambahkan sebagai turunan `FilmAnimasi` tanpa mengubah struktur yang sudah ada.
+2. *FilmAnimasi*: kategori yang lebih khusus dari Film ibarat "jenis" dari Film yang menambahkan konteks produksi animasi (studio, rating usia, frame rate).
+3. *Film2D*: turunan dari FilmAnimasi, mewakili animasi bergaya 2D secara spesifik (gaya visual, jumlah layer, resolusi).
 
 # ☕️ Class & Atribut
 1. Film
