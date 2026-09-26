@@ -1,0 +1,49 @@
+TESTCASE INPUT - VERSI PHP (WEB)
+=================================
+Program PHP berjalan lewat form di browser (bukan lewat terminal/stdin seperti
+C++, Java, dan Python). Jalankan dengan PHP built-in server, contoh:
+php -S localhost:8000 lalu buka http://localhost:8000/Main.php
+
+Form "Tambah Film Baru" langsung meminta seluruh atribut (Film + FilmAnimasi +
+Film2D) sekaligus karena satu-satunya class yang dibuat objeknya adalah Film2D
+(sudah otomatis mewarisi seluruh atribut Film dan FilmAnimasi). Poster wajib
+diunggah (boleh file gambar apa saja, contoh .jpg/.png).
+
+Test 1 - Tambah Film (harus berhasil)
+------------------------------------------------------
+ID Film        : 301
+Judul          : Detective Conan and Kaito Kid
+Genre          : Action
+Durasi         : 120
+Harga Tiket    : 50000
+Poster         : (wajib upload gambar)
+Studio Animasi : TMS Entertainment
+Rating Usia    : 17+
+Frame Rate     : 30
+Gaya Visual    : Digital Art
+Jumlah Layer   : 100
+Resolusi       : 1920x1080
+
+Setelah Test 1, tabel di bawah form akan menampilkan 6 baris data
+(5 data awal + 1 data baru), semua kolom terisi karena semua data adalah
+objek Film2D yang lengkap.
+
+Test 2 - Validasi ID ganda (harus gagal)
+------------------------------------------------------
+Ulangi Test 1 dengan ID Film = 101 (sudah dipakai data awal)
+Hasil yang diharapkan: pesan error "ID sudah ada. Gagal menambahkan film."
+
+Test 3 - Validasi input kosong/negatif (harus gagal)
+------------------------------------------------------
+ID Film     : 302
+Judul       : Uji Error
+Genre       : Drama
+Durasi      : -5
+Harga Tiket : 0
+(field lain boleh diisi bebas)
+Hasil yang diharapkan: pesan error input tidak valid.
+
+Test 4 - Validasi poster tidak diunggah (harus gagal)
+------------------------------------------------------
+Isi semua field dengan benar seperti Test 1, tapi kosongkan field Poster.
+Hasil yang diharapkan: pesan error "Poster wajib diunggah."
